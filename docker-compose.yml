@@ -1,0 +1,9 @@
+version: '2.4'
+services:
+  db:
+    container_name: angular_nestjs_db
+    image: postgres:10.7
+    volumes:
+      - './db/initdb.d:/docker-entrypoint-initdb.d'
+    ports:
+      - '5432:5432'

@@ -25,7 +25,9 @@
     "update:check": "ng update",
     "workspace-schematic": "nx workspace-schematic",
     "dep-graph": "nx dep-graph",
-    "help": "nx help"
+    "help": "nx help",
+    "run:services": "docker-compose up && exit 0",
+    "stop:services": "docker-compose down"
   },
   "private": true,
   "dependencies": {
