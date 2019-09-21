@@ -63,7 +63,26 @@ Add the following to package.json:
 }
 ```
 
-## TypeOrm
+### Dotenv
+
+```bash
+$ yarn add dotenv @types/dotenv
+```
+
+In the workspace root directory add a file `.env` with the following contents.
+
+```.env
+DB_type=postgres
+DB_host=localhost
+DB_PORT=5432
+DB_USER=angular_nestjs
+DB_PASSWORD=angular_nestjs
+DB_DATABASE=angular_nestjs
+DB_SYNCHRONIZE=true
+DB_LOGGING=true
+```
+
+### TypeOrm
 
 From the workspace root directory, install the typeorm library.
 
@@ -88,6 +107,13 @@ Create a configuration file in the workspace root directory called `ormconfig.js
     "entitiesDir": "apps/api/app/src"
   }
 }
+```
+### Package.json
+
+```
+"watch:server": "nodemon",
+"build:server": "tsc -p ./apps/api/tsconfig.app.json",
+"run:server": "node -r dotenv/config -r source-map-support/register dist/apps/api/src/main.js"
 ```
 
 ## References

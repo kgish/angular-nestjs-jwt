@@ -16,7 +16,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@ng-nest-jwt/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@ng-nest-jwt/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@ng-nest-jwt/frontend/ui": ["libs/frontend/ui/src/index.ts"],
+      "@ng-nest-jwt/frontend/core": ["libs/frontend/core/src/index.ts"],
+      "@ng-nest-jwt/frontend/features": ["libs/frontend/features/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

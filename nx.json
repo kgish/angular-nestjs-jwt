@@ -19,6 +19,15 @@
     },
     "api-interfaces": {
       "tags": []
+    },
+    "frontend-ui": {
+      "tags": []
+    },
+    "frontend-core": {
+      "tags": []
+    },
+    "frontend-features": {
+      "tags": []
     }
   }
 }
