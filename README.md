@@ -30,4 +30,7 @@ $ yarn create nx-workspace ng-nest-jwt --directory=angular-nestjs-jwt
 
 ## References
 
+* [Angular](https://angular.io)
+* [Nestjs](https://nestjs.com)
+* [Nx dev](https://nx.dev)
 * [Angular and the REST with Nest.js](https://dev.to/thisdotmedia/angular-and-the-rest-with-nest-js-2glo)
