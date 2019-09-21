@@ -1,0 +1,15 @@
+{
+  "name": "development",
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "angular_nestjs",
+  "password": "angular_nestjs",
+  "database": "angular_nestjs",
+  "synchronize": true,
+  "logging": true,
+  "entities": ["dist/api/**/*.entity.js"],
+  "cli": {
+    "entitiesDir": "apps/api/app/src"
+  }
+}

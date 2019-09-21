@@ -63,6 +63,33 @@ Add the following to package.json:
 }
 ```
 
+## TypeOrm
+
+From the workspace root directory, install the typeorm library.
+
+```bash
+$ yarn add typeorm pg @nestjs/typeorm
+```
+
+Create a configuration file in the workspace root directory called `ormconfig.json` with the following contents.
+```json
+{
+  "name": "development",
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "angular_nestjs",
+  "password": "angular_nestjs",
+  "database": "angular_nestjs",
+  "synchronize": true,
+  "logging": true,
+  "entities": ["dist/api/**/*.entity.js"],
+  "cli": {
+    "entitiesDir": "apps/api/app/src"
+  }
+}
+```
+
 ## References
 
 * [Angular](https://angular.io)
